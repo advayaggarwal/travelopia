@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travelopia</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="http://localhost:3000/trips" method="POST">
+        <div class="banner">
+          <h1>Travelopia</h1>
+        </div>
+        <br />
+        <br />
+        <fieldset>
+          <legend>Trip Info</legend>
+          <div class="colums">
+            <div class="item">
+              <label for="name">Name<span>*</span></label>
+              <input id="fname" type="text" name="name" />
+            </div>
+            <div class="item">
+            <label for="eaddress">Email Address<span>*</span></label>
+            <input id="eaddress" type="email" name="email" />
+          </div>
+            <div class="item">
+            <p>Where do you want to go?<span>*</span></p>
+            <select name="country">
+              <option selected value="" disabled selected></option>
+              <option value="India">India</option>
+              <option value="Africa">Africa</option>
+              <option value="Europe">Europe</option>
+            </select>
+          </div>
+          <div class="item">
+            <label for="travellers">Number of travellers<span>*</span></label>
+            <input id="travellers" type="text" name="travellers" />
+          </div>
+          <div class="item">
+            <label for="budget">Budget per person ($)<span>*</span></label>
+            <input id="budget" type="text" name="budget" />
+          </div>
+          
+        
+        </fieldset>
+        <div class="btn-block">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
