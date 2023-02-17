@@ -1,0 +1,18 @@
+<%- include("partials/header"); -%> <% trips.forEach(function(trip){ %>
+<div class="col mb-3 mb-sm-0">
+  <div class="card mb-3 mt-3" style="width: 18rem">
+    
+    <div class="card-body">
+      <h5 class="card-title"> <span class="material-symbols-outlined" class="card-img-top"> person </span> <%= trip.name%></h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Email: <%= trip.email%></li>
+      <li class="list-group-item">Country: <%= trip.country%></li>
+      <li class="list-group-item">
+        Number of travellers: <%= trip.travellers%>
+      </li>
+      <li class="list-group-item">Budget per person($): <%= trip.budget%></li>
+    </ul>
+  </div>
+</div>
+<% }); %> <%- include("partials/footer"); -%>
